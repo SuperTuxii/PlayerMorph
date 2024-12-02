@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "tuxi.playermorph.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "playermorph.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "AbstractClientPlayerMixin",
+    "PlayerInfoMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
