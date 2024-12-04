@@ -12,7 +12,7 @@ import tuxi.playermorph.mixininterface.MorphPlayerInfo;
 public class AbstractClientPlayerMixin {
     @Inject(method = "getPlayerInfo", at = @At("TAIL"), cancellable = true)
     private void replaceWithMorphedPlayerInfo(CallbackInfoReturnable<PlayerInfo> cir) {
-        if (((MorphPlayerInfo) cir.getReturnValue()).wolfBugs$isMorphed())
+        if (cir.getReturnValue() != null && ((MorphPlayerInfo) cir.getReturnValue()).wolfBugs$isMorphed())
             cir.setReturnValue(((MorphPlayerInfo) cir.getReturnValue()).wolfBugs$getMorphedPlayerInfo());
     }
 }
