@@ -18,3 +18,5 @@ For example (active morphs in order of application → shown one):
 - `/glow <target> add <viewers>` (Adds a glow to the target for the specified viewers)
 - `/glow <target> remove <viewers>` (Removes the glow on the target for the specified viewers)
 - `/glow <target> clear` (Removes the glow on the target for all active viewers)
+
+**The vanilla glow (Attribute / Effect) overwrites the glow created by this command!**
