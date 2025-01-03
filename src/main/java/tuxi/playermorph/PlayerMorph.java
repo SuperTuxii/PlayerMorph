@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
 import org.slf4j.Logger;
+import tuxi.playermorph.commands.GlowCommand;
 import tuxi.playermorph.commands.MorphCommands;
 import tuxi.playermorph.networking.ClientboundMorphPacket;
 import tuxi.playermorph.networking.ClientboundUnmorphPacket;
@@ -46,6 +47,7 @@ public class PlayerMorph {
     @SubscribeEvent
     public void onCommandsRegister(RegisterCommandsEvent event) {
         MorphCommands.register(event.getDispatcher());
+        GlowCommand.register(event.getDispatcher());
     }
 
     public PlayerMorph() {

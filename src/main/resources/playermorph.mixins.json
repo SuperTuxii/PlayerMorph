@@ -5,6 +5,9 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "playermorph.refmap.json",
   "mixins": [
+    "ServerGamePacketListenerImplMixin",
+    "EntityMixin",
+    "ServerEntityMixin"
   ],
   "client": [
     "AbstractClientPlayerMixin",

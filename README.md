@@ -12,3 +12,9 @@ For example (active morphs in order of application → shown one):
 - 3 → 3 (`/unmorph <player> 1`)
 
 **Beware that morphing the skin is handled on the client and could therefore be exploited by someone who is familiar with modding!**
+
+### Adds a new Command `/glow`:
+
+- `/glow <target> add <viewers>` (Adds a glow to the target for the specified viewers)
+- `/glow <target> remove <viewers>` (Removes the glow on the target for the specified viewers)
+- `/glow <target> clear` (Removes the glow on the target for all active viewers)
