@@ -10,7 +10,6 @@
     "ServerEntityMixin"
   ],
   "client": [
-    "AbstractClientPlayerMixin",
     "PlayerInfoMixin"
   ],
   "injectors": {

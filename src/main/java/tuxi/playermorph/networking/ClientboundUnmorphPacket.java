@@ -22,7 +22,7 @@ public record ClientboundUnmorphPacket(UUID morphedPlayer) {
         if (ctx.get().getNetworkManager().getPacketListener() instanceof ClientPacketListener clientPacketListener) {
             MorphPlayerInfo morphedPlayerInfo = (MorphPlayerInfo) clientPacketListener.getPlayerInfo(morphedPlayer);
             if (morphedPlayerInfo != null)
-                morphedPlayerInfo.wolfBugs$unmorph();
+                morphedPlayerInfo.playermorph$unmorph();
         }else {
             PlayerMorph.LOGGER.warn("Expected PacketListener to be ClientPacketListener, but is {}", ctx.get().getNetworkManager().getPacketListener().getClass());
         }
